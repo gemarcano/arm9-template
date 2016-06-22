@@ -1,0 +1,86 @@
+________________________________________________________________________________
+
+Nintendo 3DS ARM9 template files
+
+Copyright 2016 Gabriel Marcano
+________________________________________________________________________________
+
+
+--------------------------------------------------------------------------------
+Licensing
+--------------------------------------------------------------------------------
+
+This project is licensed under the ISC license. Refer to the LICENSE.txt file.
+
+
+--------------------------------------------------------------------------------
+About
+--------------------------------------------------------------------------------
+
+This repository includes files which can be used as a starting template for ARM9
+projects, using Autotools for a build system. Even if one does not wish to use
+Autotools for build system management, some files within the template may still
+be of interest, such as the start.s, which contains a fairly comprehensive set
+of initialization functions and some comments.
+
+Setting up Autotools requires knowing about Autoconf and Automake in particular.
+No tutorial on how to set these up will be supplied here.
+
+--------------------------------------------------------------------------------
+Dependencies
+--------------------------------------------------------------------------------
+
+ - The make program itself. This repository has not been tested with any other
+   make than GNU make. Please report incompatibilites to the issue tracker. Also
+   note, that Autotools may not like to work with make programs other than GNU
+   make.
+
+ - Autotools, in particular Autoconf and Automake. Libtool may be needed if
+   one wants to make libraries.
+     https://www.gnu.org/software/autoconf/autoconf.html
+     https://www.gnu.org/software/automake/
+     https://www.gnu.org/software/libtool/
+
+ - devKitARM, for the ARM9 compiler used for 3DS ARM9 programming.
+     http://devkitpro.org/
+
+--------------------------------------------------------------------------------
+Issues/Bugs
+--------------------------------------------------------------------------------
+
+Please report these to the issue tracker at the repository, and these will be
+addressed as soon as possible, if not at least acknowledged. The more detailed
+the reports, the more likely they are to be addressed quickly. In particular,
+the following information can be quite useful when debugging bugs:
+
+ - Type of 2/3DS system
+ - Operating system being used to compile
+ - Release/commit of project in use
+ - Steps to reproduce issue
+ - Expected behavior
+ - Actual behavior
+ - ARM9 entry point
+ - Any modifications to the project, or extensions
+
+
+--------------------------------------------------------------------------------
+Contributing
+--------------------------------------------------------------------------------
+
+Pull requests are welcome. All requests will be looked at in detail, and must be
+documented in a similar fashion as the rest of the code for this project. In
+particular, it is unlikely (but not impossible) that code that emmits warnings
+with the warnings in use by this project would be merged without first fixing/
+addressing what is causing the warnings to be emitted.
+
+
+--------------------------------------------------------------------------------
+Credits
+--------------------------------------------------------------------------------
+
+ - #3dshacks @ Rizon for starting me on my path to 3DS homebrew development
+ - #Cakey @ Freenode for the continued development support
+ - #3dsdev @ EFNet for the occasional help answering questions
+ - d0k3, Aurora, dark_samus, Normmatt, and other developers and tinkerers for
+    contributing to my general understanding of 3DS programming.
+
